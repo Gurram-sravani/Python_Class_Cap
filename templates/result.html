@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang=""eu>
+<head>
+   <title> Adding One Row</title>
+</head>
+   <body>
+
+      <p><strong>Thanks for the registration. Confirm your details</strong></p>
+
+      <table border = 1>
+         <caption> Updated Values</caption>
+         {% for key, value in result.items() %}
+
+            <tr>
+
+               <th> {{ key }} </th>
+
+               <td> {{ value }} </td>
+
+            </tr>
+
+         {% endfor %}
+
+      </table>
+
+   </body>
+
+</html>
